@@ -13,8 +13,11 @@ The dataset paper https://arxiv.org/abs/2103.16193  and it  can be found in the 
 
 # Exploratory Data Analysis
 Tableau and Excel have been used for data visualization. Additionally, we have used ffmpeg (command-line tool)/ wave python library to get audio length (duration) for each language.
+
 (Gender and age for the speaker were not provided by the dataset publishers).
-The following figures represent utterances per class (language). We can see that we have almost 2500 sample per language, our dataset is perfectly balanced. This is extremely important for classification since if we have an imbalanced dataset i.e.(we have a lot more samples in a language than the others) our model will be biased and won’t work as well.
+The following figures represent utterances per class (language).
+
+We can see that we have almost 2500 sample per language, our dataset is perfectly balanced. This is extremely important for classification since if we have an imbalanced dataset i.e.(we have a lot more samples in a language than the others) our model will be biased and won’t work as well.
 
 
 ![Sheet 3](https://user-images.githubusercontent.com/87562803/126233804-e84e9fb3-dbd0-4711-8078-676f67aa53ae.png)
@@ -31,8 +34,10 @@ The following figure represents lengths of the utterances. We can see from the f
 
 We have used OpenSMILE - https://www.audeering.com/opensmile/-
 A trending tool used by many researchers and companies in different fields (speech recognition, emotion recognition, and music information), it can extract large features spaces from different types of audio files or in real-time., it works using command-line under Linux, Mac, and windows.
+
 It contains several configuration files that extract prosodic features, PLP features, MFCC features and Chroma features.
 In this project we have extracted 6551 features using emo_large configuration(config/emo large.conf). The output is a csv file features for every audio file.
+
 
 The dataset voice featrues are available on ggogledrive link https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
 did not upload it on repository due to size of the file
