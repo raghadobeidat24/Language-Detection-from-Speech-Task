@@ -1,3 +1,4 @@
+![chart2](https://user-images.githubusercontent.com/87562803/126233914-5d4ee08b-10d3-4de7-ad42-0a448be72917.PNG)
 # Language-Detection-from-Speech-Task
 Spoken Language detection has many applications in speech recognition, multilingual machine translations. This project will try to classify four languages (Arabic, Spanish, French, and Turkish) from the spoken utterances.
  We will implement two models LSTM, MLP models, and train them to classify the languages using Keras. We will use OPENSMILE (open-source tool) for features extraction, this tool can extract large features spaces from different types of audio files.
@@ -18,3 +19,19 @@ The following figures represent utterances per class (language). We can see that
 
 
 ![Sheet 3](https://user-images.githubusercontent.com/87562803/126233804-e84e9fb3-dbd0-4711-8078-676f67aa53ae.png)
+
+
+![Uploading chart2.PNG…]()
+
+
+The following figure represents lengths of the utterances. We can see from the figure the audio files have 14 seconds duration for most samples.
+
+![chart1](https://user-images.githubusercontent.com/87562803/126233936-9968c08d-51b7-4d0a-a44b-9584fcaeabc1.PNG)
+
+# Feature Extraction 
+
+We have used OpenSMILE - https://www.audeering.com/opensmile/-
+A trending tool used by many researchers and companies in different fields (speech recognition, emotion recognition, and music information), it can extract large features spaces from different types of audio files or in real-time., it works using command-line under Linux, Mac, and windows.
+It contains several configuration files that extract prosodic features, PLP features, MFCC features and Chroma features.
+In this project we have extracted 6551 features using emo_large configuration(config/emo large.conf). The output is a csv file features for every audio file.
+
