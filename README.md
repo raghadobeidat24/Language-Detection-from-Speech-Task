@@ -1,4 +1,3 @@
-![chart2](https://user-images.githubusercontent.com/87562803/126233914-5d4ee08b-10d3-4de7-ad42-0a448be72917.PNG)
 # Language-Detection-from-Speech-Task
 Spoken Language detection has many applications in speech recognition, multilingual machine translations. This project will try to classify four languages (Arabic, Spanish, French, and Turkish) from the spoken utterances.
  We will implement two models LSTM, MLP models, and train them to classify the languages using Keras. We will use OPENSMILE (open-source tool) for features extraction, this tool can extract large features spaces from different types of audio files.
@@ -21,7 +20,7 @@ The following figures represent utterances per class (language). We can see that
 ![Sheet 3](https://user-images.githubusercontent.com/87562803/126233804-e84e9fb3-dbd0-4711-8078-676f67aa53ae.png)
 
 
-![Uploading chart2.PNG…]()
+![chart2](https://user-images.githubusercontent.com/87562803/126233914-5d4ee08b-10d3-4de7-ad42-0a448be72917.PNG)
 
 
 The following figure represents lengths of the utterances. We can see from the figure the audio files have 14 seconds duration for most samples.
