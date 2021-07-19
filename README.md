@@ -6,7 +6,7 @@ Spoken Language detection has many applications in speech recognition, multiling
  The given dataset is a media speech dataset of four languages (Arabic, Spanish, French, and Turkish), which is built with the purpose of testing Automated Speech Recognition (ASR) systems performance.  
 The dataset consists of short speech segments automatically extracted from media videos available on YouTube and manually transcribed, with some pre- and post-processing, The dataset contains 10 hours of speech for each language provided, it has 10023 samples of (.wav) audio records.
 
-The dataset is divided into 2 directories:
+The dataset is divided into 2 sets:
 
 •	train (6715 samples)
 
