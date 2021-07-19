@@ -34,3 +34,5 @@ A trending tool used by many researchers and companies in different fields (spee
 It contains several configuration files that extract prosodic features, PLP features, MFCC features and Chroma features.
 In this project we have extracted 6551 features using emo_large configuration(config/emo large.conf). The output is a csv file features for every audio file.
 
+The dataset voice featrues are available on ggogledrive link https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
+did not upload it on repository due to size of the file
