@@ -59,7 +59,7 @@ The following two tables presents the results of the implemented models with dif
 
 ![lstmacc](https://user-images.githubusercontent.com/87562803/126688324-c8f8e4c7-5205-4a07-8ea2-b79385f4fb3f.PNG)
 
-![mlpacc](https://user-images.githubusercontent.com/87562803/126688361-6637c058-16db-4e09-b6bd-e8a68ca8da98.PNG)
+![mlpacc](https://user-images.githubusercontent.com/87562803/126689079-0357f8fd-bf42-4b77-ae2b-9e3907948b4c.PNG)
 
 
 We can see that the LSTM increases the accuracy by 1.05%. the LSTM model performs better than MLP especially in the precision value for class1 0.97, in the recall value of class2 0.97and in f-score value of class2 0.96
