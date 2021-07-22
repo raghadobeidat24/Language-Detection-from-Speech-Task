@@ -73,7 +73,7 @@ F1 Score is the weighted average of Precision and Recall.
 ![mlpacc](https://user-images.githubusercontent.com/87562803/126689079-0357f8fd-bf42-4b77-ae2b-9e3907948b4c.PNG)
 
 
-We can see that the LSTM increases the accuracy by 1.05%. the LSTM model performs better than MLP especially in the precision value for class1 0.97, in the recall value of class2 0.97and in f-score value of class2 0.96
+We can see that the LSTM increases the accuracy by 1.05%. the LSTM model performs better than MLP especially in the precision value for class2 0.97, in the recall value of class1 0.97and in f-score value of class2 0.96
 
 # How To Run
 
