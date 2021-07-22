@@ -81,12 +81,22 @@ you can run it on terminal/ command line using python for example  python3 LSTM.
 
 # REST API
 
-I’ve used LSTM model and wrap it with a REST API using Flask python
+I’ve used LSTM model and wrapped it with a REST API using Flask python
 
-To Run API, you have to download model.h5 (the LSTM saved model) and opensmile feature extractor to test any specified audio file (must be .wav), and voiceData.csv (for the purpose of normalization)
+To Run flask API, you have to download model.h5 (the LSTM saved model) and opensmile feature extractor to test any specified audio file (must be .wav), and voiceData.csv (for the purpose of normalization)
 
 The Saved Pre-trained model is available on google drive link
 https://drive.google.com/file/d/1fFbmMsdYQRGt1MGw4P7fG6f_RZopz6Ja/view?usp=sharing
 
-in the RESTAPI.py code you may have to modify some variables path
-for example, file path(audio), opensmile_path, savedmode_path etc.
+you can run it on terminal/ command line using python for example:
+python3 RESTAPI.py --opensmile /home/raghad/Downloads/opensmile-3.0-linux-x64/ --model /home/raghad/Desktop/test_LD/model.h5 --features /home/raghad/Desktop/test_LD/voiceData.csv
+
+--opensmile (path/to/opensmile)
+
+--model (path/to/model.h5)
+
+--features (path/to/voiceData.csv)
+
+
+
+
