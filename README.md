@@ -97,6 +97,12 @@ python3 RESTAPI.py --opensmile /home/raghad/Downloads/opensmile-3.0-linux-x64/ -
 
 --features (path/to/voiceData.csv)
 
+in RESTAPI.py you need to change the variable (filepath) which is for the path of your voice file(audio with  type.wav)
 
+Note: this variable can be changed using post request API by uploading voice files using HTML. 
 
-
+After running flaskAPI (RESTAPI.py), open your browser and type(http://localhost:5000/language), the result will be a json response 
+{
+"language":"(Arabic, Spanish, French, and Turkish)"
+"percentage":(prediction percentage)
+}
