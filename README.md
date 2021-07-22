@@ -59,6 +59,15 @@ MLP model is the classical type of neural network and it is suitable for classif
 
 The following two tables presents the results of the implemented models with different measurements (Accuracy, Precision, Recall, F-score)
 
+Accuracy is the most intuitive performance measure and it is simply a ratio of correctly predicted observation to the total observation.
+
+Precision is the ratio of correctly predicted positive observations to the total predicted positive observations.
+
+Recall is the ratio of correctly predicted positive observations to the all observations in actual class.
+
+F1 Score is the weighted average of Precision and Recall.
+
+
 ![lstmacc](https://user-images.githubusercontent.com/87562803/126688324-c8f8e4c7-5205-4a07-8ea2-b79385f4fb3f.PNG)
 
 ![mlpacc](https://user-images.githubusercontent.com/87562803/126689079-0357f8fd-bf42-4b77-ae2b-9e3907948b4c.PNG)
