@@ -2,6 +2,8 @@
 Spoken Language detection has many applications in speech recognition, multilingual machine translations. This project will try to classify four languages (Arabic, Spanish, French, and Turkish) from the spoken utterances.
  We will implement two models LSTM, MLP models, and train them to classify the languages using Keras. We will use OPENSMILE (open-source tool) for features extraction, this tool can extract large features spaces from different types of audio files.
  
+ I could not upload some data files because of the size, it was more than 25MB. It will be available on google Drive
+ 
  # Dataset
  The given dataset is a media speech dataset of four languages (Arabic, Spanish, French, and Turkish), which is built with the purpose of testing Automated Speech Recognition (ASR) systems performance.  
 The dataset consists of short speech segments automatically extracted from media videos available on YouTube and manually transcribed, with some pre- and post-processing, The dataset contains 10 hours of speech for each language provided, it has 10023 samples of (.wav) audio records.
@@ -43,9 +45,9 @@ It contains several configuration files that extract prosodic features, PLP feat
 In this project we have extracted 6551 features using emo_large configuration(config/emo large.conf). The output is a csv file features for every audio file.
 
 
-The dataset voice featrues are available on google drive link https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
+The dataset voice features are available on google drive link https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
 
-I did not upload it on repository due to size of the file
+I could not upload it on repository due to size of the file
 
 # Models to detect the language of the speaker
 
@@ -63,3 +65,28 @@ The following two tables presents the results of the implemented models with dif
 
 
 We can see that the LSTM increases the accuracy by 1.05%. the LSTM model performs better than MLP especially in the precision value for class1 0.97, in the recall value of class2 0.97and in f-score value of class2 0.96
+
+# How To Run
+
+# Training 
+
+In the model’s folder you can find the implemented models (LSTM.py, MLP.py)
+
+To train and run these models you have to download voice features dataset (voiceData.csv)
+
+It is available on google drive link
+ https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
+ 
+you can run it on terminal/ command line using python for example  python3 LSTM.py
+
+# REST API
+
+I’ve used LSTM model and wrap it with a REST API using Flask python
+
+To Run API, you have to download model.h5 (the LSTM saved model) and opensmile feature extractor to test any specified audio file (must be .wav), and voiceData.csv (for the purpose of normalization)
+
+The Saved Pre-trained model is available on google drive link
+https://drive.google.com/file/d/1fFbmMsdYQRGt1MGw4P7fG6f_RZopz6Ja/view?usp=sharing
+
+in the RESTAPI.py code you may have to modify some variables path
+for example, file path(audio), opensmile_path, savedmode_path etc.
