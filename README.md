@@ -31,7 +31,8 @@ We can see that we have almost 2500 sample per language, our dataset is perfectl
 
 The following figure represents lengths of the utterances. We can see from the figure the audio files have 14 seconds duration for most samples.
 
-![chart1](https://user-images.githubusercontent.com/87562803/126233936-9968c08d-51b7-4d0a-a44b-9584fcaeabc1.PNG)
+![duration](https://user-images.githubusercontent.com/87562803/126688555-f7ce9111-f043-4b7f-8a0d-56b019ba83de.PNG)
+
 
 # Feature Extraction 
 
@@ -45,3 +46,20 @@ In this project we have extracted 6551 features using emo_large configuration(co
 The dataset voice featrues are available on google drive link https://drive.google.com/file/d/1EaSHd1nUxPykW5l1d4K4OTxzPOWiJZsc/view?usp=sharing
 
 I did not upload it on repository due to size of the file
+
+# Models to detect the language of the speaker
+
+We have implemented two models: Long Short-Term Memory (LSTM) and Multilayer Perceptron’s (MLP) models to train our data to classify the languages using Keras
+
+LSTM model is well-suited to classify, process and predict time series given time lags of unknown duration. This includes both sequences of text and sequences of spoken language represented as a time series.
+
+MLP model is the classical type of neural network and it is suitable for classification prediction problems where inputs are assigned a class or label.
+
+The following two tables presents the results of the implemented models with different measurements (Accuracy, Precision, Recall, F-score)
+
+![lstmacc](https://user-images.githubusercontent.com/87562803/126688324-c8f8e4c7-5205-4a07-8ea2-b79385f4fb3f.PNG)
+
+![mlpacc](https://user-images.githubusercontent.com/87562803/126688361-6637c058-16db-4e09-b6bd-e8a68ca8da98.PNG)
+
+
+We can see that the LSTM increases the accuracy by 1.05%. the LSTM model performs better than MLP especially in the precision value for class1 0.97, in the recall value of class2 0.97and in f-score value of class2 0.96
