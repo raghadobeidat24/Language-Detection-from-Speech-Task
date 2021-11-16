@@ -77,7 +77,7 @@ We can see that the LSTM increases the accuracy by 1.05%. the LSTM model perform
 
 # How To Run
 
-## Training 
+### Training 
 
 In the model’s folder you can find the implemented models (LSTM.py, MLP.py)
 
@@ -88,7 +88,7 @@ It is available on google drive link
  
 you can run it on terminal/ command line using python for example  python3 LSTM.py
 
-## REST API
+### REST API
 
 I’ve used LSTM model and wrapped it with a REST API using Flask python
 
@@ -108,6 +108,6 @@ Note: this variable can be changed using post request API by uploading voice fil
 
 After running flaskAPI (RESTAPI.py), open your browser and type(http://localhost:5000/language), the result will be a json response 
 {
-"language":"(Arabic, Spanish, French, and Turkish)"
+"language":"(Arabic, Spanish, French, and Turkish)",
 "percentage":(prediction percentage)
 }
