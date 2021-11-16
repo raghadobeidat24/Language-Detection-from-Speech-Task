@@ -77,7 +77,7 @@ We can see that the LSTM increases the accuracy by 1.05%. the LSTM model perform
 
 # How To Run
 
-# Training 
+## Training 
 
 In the model’s folder you can find the implemented models (LSTM.py, MLP.py)
 
@@ -88,7 +88,7 @@ It is available on google drive link
  
 you can run it on terminal/ command line using python for example  python3 LSTM.py
 
-# REST API
+## REST API
 
 I’ve used LSTM model and wrapped it with a REST API using Flask python
 
@@ -99,13 +99,9 @@ https://drive.google.com/file/d/1fFbmMsdYQRGt1MGw4P7fG6f_RZopz6Ja/view?usp=shari
 
 you can run it on terminal/ command line using python for example:
 python3 RESTAPI.py --opensmile /home/raghad/Downloads/opensmile-3.0-linux-x64/ --model /home/raghad/Desktop/test_LD/model.h5 --features /home/raghad/Desktop/test_LD/voiceData.csv
-
---opensmile (path/to/opensmile)
-
---model (path/to/model.h5)
-
---features (path/to/voiceData.csv)
-
+```python
+python3 RESTAPI.py --opensmile (path/to/opensmile) --model (path/to/model.h5) --features (path/to/voiceData.csv)
+```
 in RESTAPI.py you need to change the variable (filepath) which is for the path of your voice file(audio with  type.wav)
 
 Note: this variable can be changed using post request API by uploading voice files using HTML. 
