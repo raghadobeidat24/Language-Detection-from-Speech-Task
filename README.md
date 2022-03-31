@@ -28,8 +28,6 @@ We can see that we have almost 2500 sample per language, our dataset is perfectl
 ![Sheet 3](https://user-images.githubusercontent.com/87562803/126233804-e84e9fb3-dbd0-4711-8078-676f67aa53ae.png)
 
 
-![chart2](https://user-images.githubusercontent.com/87562803/126233914-5d4ee08b-10d3-4de7-ad42-0a448be72917.PNG)
-
 
 The following figure represents lengths of the utterances. We can see from the figure the audio files have 14 seconds duration for most samples.
 
